@@ -1,0 +1,18 @@
+<mat-card *ngIf="signUpData">
+  <h5>Name</h5>
+  <h4>{{ signUpData?.username }}</h4>
+  <mat-divider></mat-divider>
+  <h5>Email</h5>
+  <h4>{{ signUpData?.email }}</h4>
+  <mat-divider></mat-divider>
+  <h5>Address</h5>
+  <h4 *ngFor="let address of signUpData?.addressList">{{ address }}</h4>
+  <mat-divider></mat-divider>
+  <h5>Phone</h5>
+  <div *ngFor="let phone of signUpData?.phoneList">
+    <small>{{ phone?.type }}</small>
+    <h4>
+      {{ phone?.phoneNumber }}
+    </h4>
+  </div>
+</mat-card>

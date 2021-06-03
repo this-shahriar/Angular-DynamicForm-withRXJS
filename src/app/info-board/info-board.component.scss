@@ -1,0 +1,11 @@
+.mat-card {
+  width: 500px;
+  margin-top: 1rem;
+  @media (max-width: 580px) {
+    width: 80vw;
+  }
+  h5 {
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+}
